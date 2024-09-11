@@ -11,7 +11,7 @@ export const useGetMyOrders = () => {
     const getMyOrdersRequest = async (): Promise<Order[]> => {
       const accessToken = await getAccessTokenSilently();
   
-      const response = await fetch(`${API_BASE_URL}/api/order`, {
+      const response = await fetch(`${API_BASE_URL}api/order`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
