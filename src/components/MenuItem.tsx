@@ -1,8 +1,9 @@
-import { MenuItem as menuItem} from "/Users/ducnguyen/Documents/Projects/Food_delivery/frontend/src/types"
+
+import { MenuItem } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 type Props = {
-  menuItem: menuItem;
+  menuItem: MenuItem;
   addToCart: () => void;
 };
 
